@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const { request, response } = require('express');
 
 const port = process.env.PORT || 5000;
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
+app.use(express.json());
+app.use(express.urlencoded({
     extended: true
 }));
 
@@ -114,3 +114,4 @@ app.listen(port, () => {
     console.log(`Api corriendo en el puerto ${port}`);
 });
 // no es necesario insertar carpeta assets
+// npm install cors --save
