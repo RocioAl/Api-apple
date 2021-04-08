@@ -114,16 +114,16 @@ app.get('/products/3', (request, response) => {
 //POST
 
 app.post('/con-cors', cors(), (req, res, next) => {
-    res.json({ msg: 'con cors 🔝 🎉' })
+    res.send({ msg: 'con cors 🔝 🎉' })
 })
 app.post('/usuario', (request, response) => {
-    response.json({ info: 'La API esta en ejecucion' });
+    response.send({ info: 'La API esta en ejecucion' });
 });
 
 app.post('/products', (request, response) => {
 
 
-    response.json(
+    response.send(
 
         [
             {
@@ -161,7 +161,7 @@ app.post('/products', (request, response) => {
 app.post('/products/1', (request, response) => {
 
 
-    response.json(
+    response.send(
 
         {
             id: '1',
@@ -179,7 +179,7 @@ app.post('/products/1', (request, response) => {
 app.post('/products/2', (request, response) => {
 
 
-    response.json(
+    response.send(
 
         {
             id: '2',
@@ -195,7 +195,7 @@ app.post('/products/2', (request, response) => {
 app.post('/products/3', (request, response) => {
 
 
-    response.json(
+    response.send(
 
         {
             id: '3',
